@@ -1,7 +1,0 @@
----
-
-package:
-  openssl:
-    installed: true
-  ca-certificates:
-    installed: true
