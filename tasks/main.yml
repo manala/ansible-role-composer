@@ -1,0 +1,11 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_composer
+
+# Users Auth
+- import_tasks: users_auth.yml
+  tags:
+    - manala_composer

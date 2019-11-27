@@ -1,0 +1,24 @@
+---
+
+package:
+  openssl:
+    installed: true
+  ca-certificates:
+    installed: true
+
+file:
+  /usr/local/bin/composer:
+    exists:   true
+    mode:     "0755"
+    owner:    root
+    filetype: file
+
+command:
+  unzip -v:
+    exit-status: 0
+    stdout:
+      - UnZip
+  composer --version:
+    exit-status: 0
+    stdout:
+      - Composer version
